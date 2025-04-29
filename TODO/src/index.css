@@ -1,0 +1,18 @@
+table{
+    border:1px solid black
+}
+table p{
+    margin: 2px;
+    border:1px solid green;
+}
+table button{
+    width:100px;
+    height:30px;
+    background-color: blue;
+    color:yellow;
+    cursor:pointer;
+}
+table button:hover{
+    background-color: red;
+    color:#fff
+}

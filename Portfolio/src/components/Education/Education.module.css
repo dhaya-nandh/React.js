@@ -1,0 +1,85 @@
+@import "../../vars.css";
+
+.container{
+    position:relative;
+    background-color: rgba(12,12,12,0.6);
+    border-radius:15px;
+    padding:73px;
+    margin-top: 129px;
+    z-index:1;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.title{
+    padding-left: 15%;
+    padding-top: 7%;
+    color:var(--color-text);
+    font-size:35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30%;
+}
+.educationItems{
+    color:var(--color-text);
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+
+}
+.image{
+    width: 20%;
+    height:20%;
+    border-radius: 100%;
+}
+.educationItem{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 25px;
+   
+}
+.educationItemText{
+    width:50%;
+    height:50%;
+    background-image: linear-gradient(90deg,
+    rgba(165,215,232,0.42)0%,
+    rgba(255,255,255,0)100%);
+    background-size:0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-left: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+.educationItemText:hover{
+    background-size: 100% 100%;
+}
+@media screen and (max-width:700px) {
+.container{
+background-color: transparent;
+padding-left: 0;
+padding-right: 0;
+}
+.content{
+    padding: 0;
+}
+.educationItem{
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    width: 30%;
+    height:30%;
+    border-radius: 100%;
+}
+}
